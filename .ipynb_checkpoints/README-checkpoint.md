@@ -23,40 +23,6 @@ The dataset used in this project is the **Telco Customer Churn** dataset, which 
 - **Feature Engineering (Optional)**: Creating new features that may enhance model performance.
 - **Predictive Modeling (Optional)**: Using machine learning techniques to predict customer churn.
 
-## Setup and Installation
-
-To run this project on your local machine, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your_username/your_repository_name.git
-   cd your_repository_name
-   ```
-
-2. **Create a Virtual Environment**:
-   ```bash
-   python -m venv env
-   ```
-
-3. **Activate the Virtual Environment**:
-   - On Windows:
-     ```bash
-     .\env\Scripts\activate
-     ```
-   - On macOS/Linux:
-     ```bash
-     source env/bin/activate
-     ```
-
-4. **Install the Required Packages**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-5. **Run the Jupyter Notebook** (Optional):
-   ```bash
-   jupyter notebook
-   ```
 
 ## Analysis and Results
 
@@ -86,7 +52,3 @@ The project includes several key visualizations:
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Feedback and improvements are always welcome.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
