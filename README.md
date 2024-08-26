@@ -20,8 +20,8 @@ The dataset used in this project is the **Telco Customer Churn** dataset, which 
   - Analyzing the distribution of churn.
   - Investigating relationships between tenure, charges, and churn.
   - Visualizing the data using histograms, box plots, and scatter plots.
-- **Feature Engineering (Optional)**: Creating new features that may enhance model performance.
-- **Predictive Modeling (Optional)**: Using machine learning techniques to predict customer churn.
+- **Feature Engineering**: Creating new features that may enhance model performance.
+- **Predictive Modeling**: Using machine learning techniques to predict customer churn.
 
 
 ## Analysis and Results
@@ -43,11 +43,42 @@ The project includes several key visualizations:
 - Distribution of churn across the dataset.
 - Tenure distribution and its relationship to churn.
 - Monthly and total charges and their impact on churn.
+- 
+### Feature Engineering
+- Create additional features that could improve model performance.
+- Examples include categorizing tenure into groups, calculating the average monthly charges per tenure, or combining categorical features to create interaction terms.
+### Predictive Modeling
 
-## Future Work
+- A Logistic Regression model was trained to predict customer churn.
+- The model achieved an overall accuracy of 80%.
 
-- **Feature Engineering**: Create additional features such as tenure groups or charge groups to enhance model predictions.
-- **Predictive Modeling**: Build and evaluate a predictive model to identify customers at risk of churning.
+### Classification Report Analysis
+
+- **Class 0 (Non-Churn)**: 
+  - **Precision**: 0.84 - The model correctly identified 84% of the non-churn predictions.
+  - **Recall**: 0.90 - The model captured 90% of actual non-churn customers.
+  - **F1-Score**: 0.87 - Indicates strong overall performance in predicting non-churn.
+  
+- **Class 1 (Churn)**: 
+  - **Precision**: 0.66 - The model correctly identified 66% of the churn predictions.
+  - **Recall**: 0.52 - The model captured 52% of actual churned customers, indicating room for improvement.
+  - **F1-Score**: 0.58 - The model struggles more with predicting churn compared to non-churn.
+
+- **Macro Average**:
+  - **Precision**: 0.75 - Reflects moderate performance across both classes.
+  - **Recall**: 0.71 - Indicates the model's overall ability to capture both churn and non-churn.
+  - **F1-Score**: 0.73 - Balances precision and recall across both classes.
+  
+- **Weighted Average**:
+  - **Precision**: 0.79, **Recall**: 0.80, **F1-Score**: 0.79 - Weighted by support, showing that the model performs better overall on the majority class (non-churn).
+
+### Future Work
+
+- **Improving Churn Prediction**:
+  - Implement resampling techniques to address class imbalance.
+  - Explore alternative models such as Random Forest, Gradient Boosting, or ensemble methods.
+  - Conduct further feature engineering to enhance model performance.
+
 
 ## Contributing
 
